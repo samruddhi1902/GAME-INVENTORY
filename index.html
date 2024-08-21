@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-Based RPG Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Text-Based RPG Game</h1>
+
+        <div class="stats">
+            <h2>Character Stats</h2>
+            <p id="health">Health: 100</p>
+            <p id="attack">Attack: 10</p>
+            <p id="defense">Defense: 5</p>
+        </div>
+
+        <div class="enemy">
+            <h2>Enemy Health</h2>
+            <p id="enemy-health">100</p>
+        </div>
+
+        <div class="inventory">
+            <h2>Inventory</h2>
+            <ul id="inventory-list">
+                <!-- Inventory items will be populated here dynamically -->
+            </ul>
+        </div>
+
+        <div class="controls">
+            <h2>Actions</h2>
+            <button id="use-item" onclick="useSelectedItem()">Use Selected Item</button>
+            <button id="quit-game" onclick="quitGame()">Quit Game</button>
+        </div>
+
+        <div id="messages">
+            <p id="game-message"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
